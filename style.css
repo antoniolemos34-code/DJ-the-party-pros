@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.hero {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  padding: 30px 20px 80px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav img {
+  height: 40px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+.logo-main {
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 6px;
+}
+
+.btn.primary {
+  background: gold;
+  color: #000;
+}
+
+.btn.outline {
+  border: 2px solid gold;
+  color: gold;
+}
+
+.btn.small {
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  background: gold;
+  color: #000;
+}
+
+.services {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.why {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.why img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.why ul {
+  list-style: none;
+}
+
+.why li {
+  margin-bottom: 12px;
+}
+
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+  background: #111;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .why {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
